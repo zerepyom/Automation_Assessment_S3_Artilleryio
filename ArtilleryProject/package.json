@@ -1,0 +1,15 @@
+{
+  "name": "artilleryproject",
+  "version": "1.0.0",
+  "description": "QA Certification Artillery Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "artillery run --output results/report.json performance.yml && artillery report --output results/report.html results//report.json",
+    "test_intense": "artillery run --output results/report_i.json performance_intense.yml && artillery report --output results/report_intense.html results//report_i.json"
+  },
+  "author": "Moises Perez",
+  "license": "ISC",
+  "dependencies": {
+    "artillery": "^1.6.2"
+  }
+}
